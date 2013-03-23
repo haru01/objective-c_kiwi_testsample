@@ -1,0 +1,17 @@
+
+PODS:
+- Kiwi (2.0.5)
+- OCHamcrest (1.9)
+- Underscore.m (0.2.0)
+
+DEPENDENCIES:
+- Kiwi
+- OCHamcrest
+- Underscore.m
+
+SPEC CHECKSUMS:
+  Underscore.m: a1363c047e21e601dcabc16abd6faf9413cf4290
+  Kiwi: 89ade77eb49c889178cb2779e02514a7b9b9449e
+  OCHamcrest: f8393efd5a49d91879be573635d6183effacc0ab
+
+COCOAPODS: 0.16.4
