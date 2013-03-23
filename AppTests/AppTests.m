@@ -1,32 +1,47 @@
-//
-//  AppTests.m
-//  AppTests
-//
-//  Created by 家永英治 on 2013/03/23.
-//  Copyright (c) 2013年 家永英治. All rights reserved.
-//
+#import "Kiwi.h"
+#import "Underscore.h"
 
-#import "AppTests.h"
+@interface FizzBuzz : NSObject
+-(NSString *) convert:(int) num;
+@end
 
-@implementation AppTests
+@implementation FizzBuzz
 
-- (void)setUp
-{
-    [super setUp];
-    
-    // Set-up code here.
+-(NSArray *) converts:(NSArray *)nums {
+    return Underscore.array(nums)
+        .map(^NSString *(NSNumber *num){
+            return [self convert:num.intValue];
+        }).unwrap;
 }
 
-- (void)tearDown
-{
-    // Tear-down code here.
-    
-    [super tearDown];
-}
-
-- (void)testExample
-{
-    STFail(@"Unit tests are not implemented yet in AppTests");
+-(NSString *) convert:(int)num {
+    if (num % 15  == 0) {
+        return @"FizzBuzz";
+    }
+    if (num % 3  == 0) {
+        return @"Fizz";
+    }
+    if (num % 5  == 0) {
+        return @"Buzz";
+    }
+    return [NSString stringWithFormat:@"%d", num];
 }
 
 @end
+
+
+SPEC_BEGIN(FizzBuzzSpec)
+
+describe(@"FizzBuzz", ^{
+    __block FizzBuzz *f;
+    beforeEach(^{
+        f = [FizzBuzz new];
+    });
+
+    it(@"FizzBuzz配列を返す", ^{
+        NSArray *nums =  @[ @1, @2, @3, @4, @5, @6,  @9, @10, @12, @15 ];
+        [[[f converts:nums] should] equal: @[ @"1", @"2", @"Fizz", @"4", @"Buzz", @"Fizz",  @"Fizz", @"Buzz", @"Fizz", @"FizzBuzz" ]];
+    });
+});
+
+SPEC_END
