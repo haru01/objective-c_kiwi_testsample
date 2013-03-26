@@ -1,3 +1,7 @@
+# install
+
+    pod install
+
 # open
 
     open App.xcworkspace
