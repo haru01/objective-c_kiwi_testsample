@@ -8,11 +8,10 @@ DEPENDENCIES:
 - Kiwi
 - OCHamcrest
 - Underscore.m
-- Underscore.m
 
 SPEC CHECKSUMS:
-  Underscore.m: a1363c047e21e601dcabc16abd6faf9413cf4290
   Kiwi: 89ade77eb49c889178cb2779e02514a7b9b9449e
   OCHamcrest: f8393efd5a49d91879be573635d6183effacc0ab
+  Underscore.m: a1363c047e21e601dcabc16abd6faf9413cf4290
 
 COCOAPODS: 0.16.4
