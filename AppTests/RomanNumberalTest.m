@@ -13,6 +13,7 @@
 @implementation RomanNumber
 
 -(id)initWithNum:(NSNumber *)aNumber {
+    // TODO 引数が 1-3999 以外の場合
     self = [super init];
     if (self) {
         _number = aNumber;
@@ -22,6 +23,7 @@
 }
 
 -(id)initWithRomanStr:(NSString *)aRomanStr {
+    // TODO 引数がローマ数字でないばあい
     self = [super init];
     if (self) {
         _romanStr = aRomanStr;
@@ -152,16 +154,12 @@ describe(@"RomanNumber", ^{
         RomanNumber *three =  [[RomanNumber alloc] initWithRomanStr:@"III"];
         RomanNumber *four =  [[RomanNumber alloc] initWithRomanStr:@"IV"];
         [[[one plus:three] should] equal:four];
-        [[[[one plus:three] number] should] equal:[four number]];
-        [[[one plus:three] shouldNot] equal:one];
+        [[[[one plus:three] number] should] equal:@(4)];
     });
     
     // TODO
-    // - 3999オーバーの場合
-    // - ローマ数字として解釈できない文字列の場合
     // - 引き算
     // - ローマ数字のソート
-
 });
 
 SPEC_END
