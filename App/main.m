@@ -1,21 +1,13 @@
-//
-//  main.m
-//  App
-//
-//  Created by 家永英治 on 2013/03/23.
-//  Copyright (c) 2013年 家永英治. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
+#import "FizzBuzz.h"
+#import "RomanNumber.h"
 
 int main(int argc, const char * argv[])
 {
-
     @autoreleasepool {
-        
-        // insert code here...
-        NSLog(@"Hello, World!");
-        
+        RomanNumber *one = [[RomanNumber alloc] initWithRomanStr:@"I"];
+        RomanNumber *two = [[RomanNumber alloc] initWithRomanStr:@"II"];
+        NSLog(@"%@", [one plus:two]);
     }
     return 0;
 }

@@ -72,6 +72,10 @@
     return YES;
 }
 
+- (NSString *)description {
+    return self.romanStr;
+}
+
 - (NSNumber *)convertNumber:(NSString *)aRomanStr {
     // 総当たりでマッチするものを探す方法
     for(int i=0; i<4000; i++ ) {
