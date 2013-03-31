@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2505AB7517067A890015A0F1 /* RomanNumberalTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2505AB7417067A890015A0F1 /* RomanNumberalTest.m */; };
 		2506D64C16FE88A000D48339 /* FizzBuzzTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2506D64B16FE88A000D48339 /* FizzBuzzTest.m */; };
 		258A3E6C1708198D00559ED1 /* FizzBuzz.m in Sources */ = {isa = PBXBuildFile; fileRef = 258A3E6B1708198D00559ED1 /* FizzBuzz.m */; };
 		258A3E6D170819BB00559ED1 /* FizzBuzz.m in Sources */ = {isa = PBXBuildFile; fileRef = 258A3E6B1708198D00559ED1 /* FizzBuzz.m */; };
+		258A3E7117081BB100559ED1 /* RomanNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 258A3E7017081BB100559ED1 /* RomanNumber.m */; };
+		258A3E7217081BB100559ED1 /* RomanNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 258A3E7017081BB100559ED1 /* RomanNumber.m */; };
+		258A3E7417081ED900559ED1 /* RomanNumberTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 258A3E7317081ED900559ED1 /* RomanNumberTest.m */; };
 		25AD7C7316FD78F900B8A548 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AD7C7216FD78F900B8A548 /* Foundation.framework */; };
 		25AD7C7616FD78F900B8A548 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AD7C7516FD78F900B8A548 /* main.m */; };
 		25AD7C7A16FD78F900B8A548 /* App.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25AD7C7916FD78F900B8A548 /* App.1 */; };
@@ -36,10 +38,12 @@
 
 /* Begin PBXFileReference section */
 		119F5F7B7AAF4ED99AF397FC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		2505AB7417067A890015A0F1 /* RomanNumberalTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RomanNumberalTest.m; sourceTree = "<group>"; };
 		2506D64B16FE88A000D48339 /* FizzBuzzTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzzTest.m; sourceTree = "<group>"; };
 		258A3E6A1708198D00559ED1 /* FizzBuzz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizzBuzz.h; sourceTree = "<group>"; };
 		258A3E6B1708198D00559ED1 /* FizzBuzz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzz.m; sourceTree = "<group>"; };
+		258A3E6F17081BB100559ED1 /* RomanNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RomanNumber.h; sourceTree = "<group>"; };
+		258A3E7017081BB100559ED1 /* RomanNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RomanNumber.m; sourceTree = "<group>"; };
+		258A3E7317081ED900559ED1 /* RomanNumberTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RomanNumberTest.m; sourceTree = "<group>"; };
 		25AD7C6F16FD78F900B8A548 /* App */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = App; sourceTree = BUILT_PRODUCTS_DIR; };
 		25AD7C7216FD78F900B8A548 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		25AD7C7516FD78F900B8A548 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -125,6 +129,8 @@
 				25AD7C7516FD78F900B8A548 /* main.m */,
 				25AD7C7916FD78F900B8A548 /* App.1 */,
 				25AD7C7716FD78F900B8A548 /* Supporting Files */,
+				258A3E6F17081BB100559ED1 /* RomanNumber.h */,
+				258A3E7017081BB100559ED1 /* RomanNumber.m */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -150,10 +156,10 @@
 		25AD7C8E16FD791700B8A548 /* AppTests */ = {
 			isa = PBXGroup;
 			children = (
+				258A3E7317081ED900559ED1 /* RomanNumberTest.m */,
 				2506D64B16FE88A000D48339 /* FizzBuzzTest.m */,
 				25AD7C9416FD791700B8A548 /* AppTests.h */,
 				25AD7C8F16FD791700B8A548 /* Supporting Files */,
-				2505AB7417067A890015A0F1 /* RomanNumberalTest.m */,
 			);
 			path = AppTests;
 			sourceTree = "<group>";
@@ -297,6 +303,7 @@
 			files = (
 				25AD7C7616FD78F900B8A548 /* main.m in Sources */,
 				258A3E6C1708198D00559ED1 /* FizzBuzz.m in Sources */,
+				258A3E7117081BB100559ED1 /* RomanNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,8 +312,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2506D64C16FE88A000D48339 /* FizzBuzzTest.m in Sources */,
-				2505AB7517067A890015A0F1 /* RomanNumberalTest.m in Sources */,
 				258A3E6D170819BB00559ED1 /* FizzBuzz.m in Sources */,
+				258A3E7217081BB100559ED1 /* RomanNumber.m in Sources */,
+				258A3E7417081ED900559ED1 /* RomanNumberTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
