@@ -1,5 +1,6 @@
 # install
-
+    
+    gem install cocoapods
     pod install
 
 # open
